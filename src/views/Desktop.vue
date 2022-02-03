@@ -12,6 +12,12 @@
     <div class="right-key-trigger" v-if="showRightTriggerVue">
       <RightTrigger />
     </div>
+    <div class="vs-code" style="display:none">
+      <VsCode />
+    </div>
+    <div class="chrome">
+      <Chrome />
+    </div>
   </div>
 </template>
 
@@ -20,6 +26,10 @@ import Docker from '@/components/Docker';
 import Finder from '@/components/Finder';
 import Window from '@/components/Window';
 import RightTrigger from '../components/RightTrigger';
+import VsCode from '../components/VsCode.vue';
+import Chrome from '../components/Chrome.vue';
+
+
 import { mapState } from 'vuex';
 
 export default {
@@ -28,7 +38,9 @@ export default {
     Docker,
     Finder,
     Window,
-    RightTrigger
+    RightTrigger,
+    VsCode,
+    Chrome
   },
   data() {
     return {
